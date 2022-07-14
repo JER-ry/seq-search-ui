@@ -117,7 +117,7 @@
   {#if table2}
     <div class="flex flex-col">
       <div class="flex flex-row font-bold uppercase text-base">
-        <div class="w-1/2 pr-1">Matched doc</div>
+        <div class="w-1/2 pr-1">Matched docs</div>
         <div class="w-1/4 pr-1">Term freq</div>
         <div class="w-1/4 pr-1">Related ngrams</div>
       </div>
@@ -147,7 +147,7 @@
         on:click={() => {
           saveAs(
             csv(
-              [["Matched doc", "Term freq", "Related ngrams"]].concat(table2)
+              [["Matched docs", "Term freq", "Related ngrams"]].concat(table2)
             ),
             table1Ngram + "_table2.csv"
           )
