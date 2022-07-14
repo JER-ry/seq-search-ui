@@ -90,8 +90,8 @@
             {/if}
             <button
               class={table1Ngram === ngram[1]
-                ? "inline-flex content-start font-bold hover:underline"
-                : "inline-flex content-start hover:underline"}
+                ? "inline-flex content-start text-left font-bold hover:underline"
+                : "inline-flex content-start text-left hover:underline"}
               on:click={() => getTable2(ngram[1])}
             >
               {ngram[1]}
@@ -131,8 +131,8 @@
             {/if}
             <button
               class={table2Doc === doc[1]
-                ? "inline-flex content-start font-bold hover:underline"
-                : "inline-flex content-start hover:underline"}
+                ? "inline-flex content-start text-left font-bold hover:underline"
+                : "inline-flex content-start text-left hover:underline"}
               on:click={() => getTable3(doc[1])}
             >
               {doc[1]}
