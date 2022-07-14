@@ -105,7 +105,11 @@
         class="mt-2 w-fit text-green-400 uppercase hover:underline"
         on:click={() => {
           saveAs(
-            csv([["Matched ngrams", "Term freq", "Doc freq"]].concat(table1)),
+            csv(
+              [["Ngram id", "Matched ngrams", "Term freq", "Doc freq"]].concat(
+                table1
+              )
+            ),
             input + "_table1.csv"
           )
         }}
@@ -147,7 +151,9 @@
         on:click={() => {
           saveAs(
             csv(
-              [["Matched docs", "Term freq", "Related ngrams"]].concat(table2)
+              [
+                ["Doc id", "Matched docs", "Term freq", "Related ngrams"]
+              ].concat(table2)
             ),
             table1Ngram + "_table2.csv"
           )
@@ -175,7 +181,7 @@
         class="mt-2 w-fit text-green-400 uppercase hover:underline"
         on:click={() => {
           saveAs(
-            csv([["Popular ngrams", "Term freq"]].concat(table3)),
+            csv([["Ngram id", "Popular ngrams", "Term freq"]].concat(table3)),
             table2Doc + "_table3.csv"
           )
         }}
